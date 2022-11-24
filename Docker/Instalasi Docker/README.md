@@ -1,5 +1,10 @@
 # Instalasi Docker
 
+- [Referensi Install Docker Windows](https://docs.docker.com/desktop/windows/install/)
+- [Referensi Video Youtube Install Docker Windows](https://youtu.be/_9AWYlt86B8)
+- [Referensi Video Youtube Install Docker Windows 2](https://youtu.be/x3KEcEp5paQ)
+- [Referensi Install Docker Mac](https://docs.docker.com/desktop/mac/install/)
+
 ## Install Docker dari installer
   1. Double click Desktop Instller.exe untuk menjalankan penginstal.
   
@@ -19,13 +24,15 @@
       ```
       
 ## Install Docker Engine di Ubuntu
-  1. Setelah instance launch, copy IPv4 di dalam detail instance untuk melakukan login menggunakan SSH
-  2. Ketikan perintah berikut untuk melakukan login dengan SSH
+- [Referensi Instal Docker Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
+
+ 1. Setelah instance launch, copy IPv4 di dalam detail instance untuk melakukan login menggunakan SSH
+ 2. Ketikan perintah berikut untuk melakukan login dengan SSH
       ```sh
       ssh ubuntu@13.213.58.47
       ```
       > untuk 13.213.58.47 bisa disesuaikan dengan IPv4 yang anda miliki
-  3. Selanjutnya kita akan menginstal Docker Engine di Ubuntu.
+ 3. Selanjutnya kita akan menginstal Docker Engine di Ubuntu.
 
 ## Setup repositori
   1. Langkah pertama, wajib melakukan apt update
