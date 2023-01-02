@@ -72,7 +72,7 @@
       * Pertama lakukan list versi yang sudah tersedia di repo anda
           ```sh
           apt-cache madison docker-ce
-          `` `
+          ```
        * Selanjutnya instal versi spesifik dari Docker Engine yang diinginkan. Contoh 5:18.09.1~3-0~ubuntu-xenial
           ```sh
           sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io docker-compose-plugin
