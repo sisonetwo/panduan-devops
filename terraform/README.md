@@ -5,3 +5,12 @@ Terraform dikembangkan oleh HashiCorp yang merupakan tools infrastruktur as a co
 Referensi [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli).
 
  ## Install Terraform di MAC OS
+
+1. Download terraform di https://developer.hashicorp.com/terraform/downloads
+
+2. Extract file terraform
+
+3. install terraform di terminal dengan perintah
+```sh
+mv /Downloads/terraform /usr/local/bin/terraform
+```
