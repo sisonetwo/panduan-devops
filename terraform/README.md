@@ -8,9 +8,15 @@ Referensi [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/in
 
 1. Download terraform di https://developer.hashicorp.com/terraform/downloads
 
+  ![img 1](terraform1.png)
+
 2. Extract file terraform
 
-3. install terraform di terminal dengan perintah
+  ![img 1](terraform2.png)
+
+3. install terraform di terminal dengan perintah :
 ```sh
 mv /Downloads/terraform /usr/local/bin/terraform
 ```
+
+  ![img 1](terraform3.png)
