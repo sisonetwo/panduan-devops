@@ -20,3 +20,19 @@ mv /Downloads/terraform /usr/local/bin/terraform
 ```
 
   ![img 1](terraform3.png)
+
+
+## AWS Provider
+
+Untuk menggunakan Provider AWS, syarat utama yang dibutuhkan adalah menginstall AWS CLI. Instalasi AWS CLI dapat dilakukan dengan cara berikut:
+
+Referensi [Install AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+
+## AWS CLI di Mac OS
+1. Download dan jalankan AWS CLI macOS pkg file. https://awscli.amazonaws.com/AWSCLIV2.pkg
+2. Ikuti instruksi installasi.
+3. Untuk mengkonfirmasi terinsall, dapat dilakukan dengan mengetikan command berikut di terminal.
+```sh
+aws --version
+```
+
