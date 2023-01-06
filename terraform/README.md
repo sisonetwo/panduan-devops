@@ -36,3 +36,17 @@ Referensi [Install AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/get
 aws --version
 ```
 
+## Menjalankan terraform
+
+1. Inisialisasi provider
+```sh
+terraform init
+```
+2. Melihat detail resource sebelum dibuat
+```sh
+terraform plan
+```
+3. Apply resource
+```sh
+terraform apply
+```
