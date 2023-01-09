@@ -1,4 +1,4 @@
-## Terraform
+# Terraform
 
 Terraform dikembangkan oleh HashiCorp yang merupakan tools infrastruktur as a code sebagai alat yang memungkinkan untuk membuat, mengubah, dan meningkatkan infrastuktur dengan aman dan dapat diprediksi. Terraform dikembangkan dalam bahasa Go. Terraform mendukung provision di berbagai provider cloud yang besar seperti AWS, GCP, Azure, bahkan DigitalOcean.
 
@@ -7,19 +7,19 @@ Referensi [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/in
  ## Install Terraform di MAC OS
 
 1. Download terraform di https://developer.hashicorp.com/terraform/downloads
-
-  ![img 1](terraform1.png)
+ 
+    <img width="350" alt="Screen Shot 2022-05-11 at 14 37 11" src="terraform1.png">
 
 2. Extract file terraform
 
-  ![img 1](terraform2.png)
+    <img width="350" alt="Screen Shot 2022-05-11 at 14 37 11" src="terraform2.png">
 
 3. install terraform di terminal dengan perintah :
-```sh
-mv /Downloads/terraform /usr/local/bin/terraform
-```
+   ```sh
+   mv /Downloads/terraform /usr/local/bin/terraform
+   ```
 
-  ![img 1](terraform3.png)
+    <img width="350" alt="Screen Shot 2022-05-11 at 14 37 11" src="terraform2.png">
 
 
 ## AWS Provider
@@ -32,21 +32,21 @@ Referensi [Install AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/get
 1. Download dan jalankan AWS CLI macOS pkg file. https://awscli.amazonaws.com/AWSCLIV2.pkg
 2. Ikuti instruksi installasi.
 3. Untuk mengkonfirmasi terinsall, dapat dilakukan dengan mengetikan command berikut di terminal.
-```sh
-aws --version
-```
+   ```sh
+   aws --version
+   ```
 
 ## Menjalankan terraform
 
 1. Inisialisasi provider
-```sh
-terraform init
-```
+   ```sh
+   terraform init
+   ```
 2. Melihat detail resource sebelum dibuat
-```sh
-terraform plan
-```
+   ```sh
+   terraform plan
+   ```
 3. Apply resource
-```sh
-terraform apply
-```
+   ```sh
+   terraform apply
+   ```
