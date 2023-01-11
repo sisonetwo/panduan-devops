@@ -35,6 +35,15 @@ Referensi [Install AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/get
    ```sh
    aws --version
    ```
+   
+## Create User AWS CLI
+1. Login akun root https://aws.amazon.com/ anda dan search IAM
+2. Buat user IAM baru di menu `User Management` - `User`, pilih `Add Users`
+3. Buat `user name` baru, pada `Select AWS access type` ceklist `acccess key` lalu klik `Next Permissions`
+4. Pilih `Attach existing polices directly` ceklist `AdministratorAccess` lalu klik `Next: Tags`
+5. key isi `name` Value (Optional) isi `devops` lalu klik `Next: Review`
+6. Klik `Create User`, `Access Key ID` dan `Secret access key` sudah dibuat.
+7. Pada termnal klik `aws configure` isi `AWS Access Key ID` dan `AWS Secret Access Key` yang ada di akun aws, untuk region isi `ap-southeast-1`, `json` klik `Enter`
 
 ## Menjalankan terraform
 
