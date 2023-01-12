@@ -6,10 +6,9 @@ Referensi [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/in
 Referensi [Install AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 
 
- ## Install Terraform di MAC OS
+## Install Terraform di MAC OS
 
-1. Download terraform di https://developer.hashicorp.com/terraform/downloads / https://awscli.amazonaws.com/AWSCLIV2.pkg
- 
+1. Download terraform di https://developer.hashicorp.com/terraform/downloads
     <img width="350" alt="Screen Shot 2022-05-11 at 14 37 11" src="terraform1.png">
 
 2. Extract file terraform
@@ -25,8 +24,20 @@ Referensi [Install AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/get
 
 4. Untuk mengkonfirmasi terinsall, dapat dilakukan dengan mengetikan command berikut di terminal.
    ```sh
-   aws --version
+   terraform --help
    ```
+   
+   
+## Install AWS CLI di MAC
+1. Download dan jalankan AWS CLI macOS pkg file. https://awscli.amazonaws.com/AWSCLIV2.pkg
+
+2. Ikuti instruksi installasi.
+
+3. Untuk mengkonfirmasi terinsall, dapat dilakukan dengan mengetikan command berikut di terminal.
+
+```sh
+aws --version
+```
    
 ## Create User AWS CLI
 1. Login akun root https://aws.amazon.com/ anda dan search IAM
@@ -36,6 +47,7 @@ Referensi [Install AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/get
 5. key isi `name` Value (Optional) isi `devops` lalu klik `Next: Review`
 6. Klik `Create User`, `Access Key ID` dan `Secret access key` sudah dibuat.
 7. Pada termnal klik `aws configure` isi `AWS Access Key ID` dan `AWS Secret Access Key` yang ada di akun aws, untuk region isi `ap-southeast-1`, `json` klik `Enter`
+
 
 ## Menjalankan terraform
 
@@ -50,4 +62,8 @@ Referensi [Install AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/get
 3. Apply resource
    ```sh
    terraform apply
+   ```
+4. Untuk uninstall provider ketik
+   ```sh
+   terraform destroy
    ```
