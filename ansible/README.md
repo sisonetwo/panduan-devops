@@ -16,3 +16,9 @@ python get-pip.py --user
 ```sh
 pip install ansible
 ```
+
+## Menjalankan Ansible
+
+```sh
+ansible-playbook -i hosts `nama file`
+```
