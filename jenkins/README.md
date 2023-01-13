@@ -1,22 +1,11 @@
 # Install dan Konfigurasi Jenkins
 
-## Buat 3 VM di AWS
-
-1. Siapkan 3 instance di AWS dengan nama jenkins, prod, dev di folder `panduan-devops/jenkins/ec2`
-
-2. Running terraform dengan ketik :
-
-   ```sh
-   terraform init
-   ```
-
-   ```sh
-   terraform apply
-   ```  
 
 ## Install Jenkins
 
-- [Referensi Install Jenkins](https://www.jenkins.io/doc/book/installing/)
+- [Referensi Install Jenkins](https://www.jenkins.io/doc/book/installing/)\
+
+## Manual install VM di AWS
 
 1. Siapkan instance di AWS dengan ketentuan yang sesuai dengan minimum requirement penginstalan jenkins
 
@@ -36,23 +25,37 @@
 
       <img width="350" alt="Screen Shot 2022-05-11 at 14 28 20" src="https://user-images.githubusercontent.com/38523284/167793443-fe960d2d-e38f-4786-9822-c85dfbc3ddae.png">
       
-2. Login SSH menggunakan IPv4 yang terdapat pada detail instance
+Install VM dengan Terraform
 
-3. Masuk ke folder `devopsapril/ansible`
+1. Siapkan 3 instance di AWS dengan nama jenkins, prod, dev di folder `panduan-devops/jenkins/ec2`
 
-4. Kemudian ubah nomor IP yang terdapat di file `hosts` dengan menggunakan `nano`
+2. Running terraform dengan ketik :
 
-5. Dilanjutkan menginstall docker terlebih dahulu
+   ```sh
+   terraform init
+   ```
+
+   ```sh
+   terraform apply
+   ```  
+      
+3. Login SSH menggunakan IPv4 yang terdapat pada detail instance
+
+4. Masuk ke folder `panduan-devops/ansible`
+
+5. Kemudian ubah nomor IP yang terdapat di file `hosts` dengan menggunakan `nano`
+
+6. Dilanjutkan menginstall docker terlebih dahulu
 
     ```sh
     ansible-playbook -i hosts install_docker.yml
     ```
     
-6. Setelah selesai install docker, dilanjutkan menginstall jenkins dengan menggunakan sintaks berikut
+7. Setelah selesai install docker, dilanjutkan menginstall jenkins dengan menggunakan sintaks berikut
     ```sh
     docker network create jenkins
     ```
-7. Untuk menjalankan perintah Docker di dalam node Jenkins, unduh dan jalankan gambar `docker:dind` Docker menggunakan perintah run docker berikut:
+8. Untuk menjalankan perintah Docker di dalam node Jenkins, unduh dan jalankan gambar `docker:dind` Docker menggunakan perintah run docker berikut:
 
     ```sh
     docker run \
@@ -70,7 +73,7 @@
     --storage-driver overlay2
     ```
     
-8. Selanjutnya kita akan membuat Docker File, dengan mengeksekusi 2 langkah berikut
+9. Selanjutnya kita akan membuat Docker File, dengan mengeksekusi 2 langkah berikut
 
     ```sh
     nano Dockerfile
@@ -99,7 +102,7 @@
     docker build -t myjenkins-blueocean:2.332.3-1 .
     ```
     
-9. Setelah langkah membuat Dockerfile selesai, kita akan menjalankan/ run `myjenkins-blueocean:2.332.3-1` image sebagai container di Docker
+10. Setelah langkah membuat Dockerfile selesai, kita akan menjalankan/ run `myjenkins-blueocean:2.332.3-1` image sebagai container di Docker
 
     ```sh
     docker run \
@@ -117,16 +120,16 @@
     myjenkins-blueocean:2.332.3-1 
     ```
     
-10. Jalankan jenkins di browser dengan port sesuai yang tertera pada detail containernya, maka akan tampil laman berikut :
+11. Jalankan jenkins di browser dengan port sesuai yang tertera pada detail containernya, maka akan tampil laman berikut :
     <img width="400" alt="Screen Shot 2022-05-11 at 14 21 36" src="https://user-images.githubusercontent.com/38523284/167792244-bdcf6cad-5247-4e56-a41e-7fa2a6c00079.png">
     
-11. Saat pertama kali akses jenkins, anda wajib untuk memasukan `administrator password` yang dapat diakses dengan sintaks berikut
+12. Saat pertama kali akses jenkins, anda wajib untuk memasukan `administrator password` yang dapat diakses dengan sintaks berikut
 
     ```sh
     docker exec -it jenkins-blueocean cat /var/jenkins_home/secrets/initialAdminPassword
     ```
     
-12. Setelah memasukan `administrator password` kemudian akan masuk ke jendela `Getting started`
+13. Setelah memasukan `administrator password` kemudian akan masuk ke jendela `Getting started`
 
     * Pilih `install suggested plugins` pada segmen Customize Jenkins, kemudian tunggu sampai instalasi plugin selesai
 
