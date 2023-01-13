@@ -9,6 +9,7 @@ Referensi [Install AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/get
 ## Install Terraform di MAC OS
 
 1. Download terraform di https://developer.hashicorp.com/terraform/downloads
+
     <img width="350" alt="Screen Shot 2022-05-11 at 14 37 11" src="terraform1.png">
 
 2. Extract file terraform
@@ -24,7 +25,7 @@ Referensi [Install AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/get
 
 4. Untuk mengkonfirmasi terinsall, dapat dilakukan dengan mengetikan command berikut di terminal.
    ```sh
-   terraform --help
+   terraform --version
    ```
    
    
