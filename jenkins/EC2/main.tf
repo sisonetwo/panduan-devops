@@ -10,7 +10,7 @@ terraform {
 
 provider "aws" {
   profile = "default"
-  region = "eu-west-2"
+  region = "ap-southeast-1"
 }
 
 variable "instance_tags" {
