@@ -163,3 +163,11 @@
 
 4. Kedua, install plugin `Generic Webhook Trigger`
    > fungsi dari `Generic Webhook Trigger` untuk memudahkan menjalankan jenkins hanya dengan 1 triger
+
+   <img width="1152" alt="Screen Shot 2022-05-11 at 14 43 40" src="https://user-images.githubusercontent.com/38523284/167796221-526e0767-c439-4867-b178-5536dd52bb62.png">
+
+5. Ketiga, install plugin `Environmental Injector`
+   > fungsi dari `Environmental Injector` untuk memudahkan dalam menambah environment didalam jenkins
+
+   <img width="1138" alt="Screen Shot 2022-05-11 at 14 48 41" src="https://user-images.githubusercontent.com/38523284/167797095-60897bcf-1569-4580-abab-468b907f8367.png">
+
