@@ -1,5 +1,19 @@
 # Install dan Konfigurasi Jenkins
 
+## Buat 3 VM di AWS
+
+1. Siapkan 3 instance di AWS dengan nama jenkins, prod, dev di folder `panduan-devops/jenkins/ec2`
+
+2. Running terraform dengan ketik :
+
+   ```sh
+   terraform init
+   ```
+
+   ```sh
+   terraform apply
+   ```  
+
 ## Install Jenkins
 
 - [Referensi Install Jenkins](https://www.jenkins.io/doc/book/installing/)
