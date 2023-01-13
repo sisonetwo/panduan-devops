@@ -5,7 +5,7 @@
 
 - [Referensi Install Jenkins](https://www.jenkins.io/doc/book/installing/)\
 
-## Manual install VM di AWS
+## Manual Install VM di AWS
 
 1. Siapkan instance di AWS dengan ketentuan yang sesuai dengan minimum requirement penginstalan jenkins
 
@@ -25,7 +25,7 @@
 
       <img width="350" alt="Screen Shot 2022-05-11 at 14 28 20" src="https://user-images.githubusercontent.com/38523284/167793443-fe960d2d-e38f-4786-9822-c85dfbc3ddae.png">
       
-Install VM dengan Terraform
+## Install VM dengan Terraform
 
 1. Siapkan 3 instance di AWS dengan nama jenkins, prod, dev di folder `panduan-devops/jenkins/ec2`
 
