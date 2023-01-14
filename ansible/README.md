@@ -24,11 +24,11 @@ Ansible merupakan tool yang digunkaan untuk mensetup infrastruktur. Dimana kita 
 
 ## Install di MAC OS
 
-Instalasi di MAC OS, menggunakan pip. Untuk menjalankan pip kita harus memiliki python terlebih dahulu
+Instalasi di MAC OS menggunakan pip
 
-1. Pertama install dengan brew
+1. Pertama install dengan pip
   ```sh
-  brew install ansible
+  sudo -H pip3 install ansible
   ```
 
 2. Jika sudah selesai install, cek ansible yang sudah di install pake pc atau server dengan perintah :
