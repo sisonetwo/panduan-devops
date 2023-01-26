@@ -171,3 +171,9 @@
 
    <img width="1138" alt="Screen Shot 2022-05-11 at 14 48 41" src="https://user-images.githubusercontent.com/38523284/167797095-60897bcf-1569-4580-abab-468b907f8367.png">
 
+## Install VM Prod dan Dev
+
+1. Edit file hosts untuk `prod` dan `dev` di `panduan-devops/jenkins/hosts`, ubah domain yang ada di hosts tersebut
+
+2. Ubah DNS record di etc hosts `sudo nano /etc/hosts`
+
