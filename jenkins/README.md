@@ -177,3 +177,12 @@
 
 2. Ubah DNS record di etc hosts `sudo nano /etc/hosts`
 
+3. Install aplikasi pendukung di `panduan-devops/ansible/` dengan sintaks :
+     ```sh
+     ansible-playbook -i hosts install_nginx.yml install_docker.yml install_php_fpm.yml setup_mysql.yml install_composer.yml create_hosts.yml create_hosts_dev.yml
+     ```
+     
+4. cek browser dengan ketik `prod.belajardevops.online` dan `dev.belajardevops.online`
+
+
+
