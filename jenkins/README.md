@@ -184,5 +184,16 @@
      
 4. cek browser dengan ketik `prod.belajardevops.online` dan `dev.belajardevops.online`
 
+5. Clone aplikasi laravel dengan perintah 
+
+   ```sh
+   git clone https://github.com/teknoaplikasi/bootcamp-laravel
+   ```
+   
+6. Full deploy secara manual dengan rsync
+
+   ```sh
+   rsync -avz ./ ubuntu@dev.belajardevops.online:~/dev.belajardevops.online/ --exclude=.git
+   ```
 
 
