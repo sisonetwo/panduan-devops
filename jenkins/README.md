@@ -43,7 +43,7 @@
 
 4. Masuk ke folder `panduan-devops/ansible`
 
-5. Kemudian ubah nomor IP yang terdapat di file `hosts` dengan menggunakan `nano`
+5. Kemudian ubah nomor IP yang terdapat di file `/etc/hosts` dengan menggunakan `nano`
 
 6. Dilanjutkan menginstall docker terlebih dahulu
 
