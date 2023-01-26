@@ -3,7 +3,7 @@
 
 ## Install Jenkins
 
-- [Referensi Install Jenkins](https://www.jenkins.io/doc/book/installing/)\
+- [Referensi Install Jenkins](https://www.jenkins.io/doc/book/installing/)
 
 ## Manual Install VM di AWS
 
@@ -120,7 +120,7 @@
     myjenkins-blueocean:2.332.3-1 
     ```
     
-11. Jalankan jenkins di browser dengan port sesuai yang tertera pada detail containernya, maka akan tampil laman berikut :
+11. Jalankan jenkins di browser dengan ip (curl ip.me) dengan  port 8080 sesuai yang tertera pada detail containernya, maka akan tampil laman berikut :
     <img width="400" alt="Screen Shot 2022-05-11 at 14 21 36" src="https://user-images.githubusercontent.com/38523284/167792244-bdcf6cad-5247-4e56-a41e-7fa2a6c00079.png">
     
 12. Saat pertama kali akses jenkins, anda wajib untuk memasukan `administrator password` yang dapat diakses dengan sintaks berikut
