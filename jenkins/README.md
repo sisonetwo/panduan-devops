@@ -184,7 +184,7 @@
      
 4. cek browser dengan ketik `prod.belajardevops.online` dan `dev.belajardevops.online`
 
-5. Clone aplikasi laravel dengan perintah 
+5. Clone aplikasi laravel di lokal PC 
 
    ```sh
    git clone https://github.com/teknoaplikasi/bootcamp-laravel
@@ -195,5 +195,43 @@
    ```sh
    rsync -avz ./ ubuntu@dev.belajardevops.online:~/dev.belajardevops.online/ --exclude=.git
    ```
+   
+7. Masuk ke folder dev.belajardevops.online dan Install composer install di VM `dev`
 
+   ```sh
+   composer install
+   ```
+
+8. Copy env.example ke .env di VM `dev`
+   
+   ```sh
+   cp .env.example .env
+   ```
+9. Ganti .env dengan `nano`
+
+   ```sh
+   DB_DATABSE=bootcamp
+   DB_USERNAME=bootcamp
+   DB_PASSWORD=bootcamp
+   ```
+   
+10. run
+
+   ```sh
+   php artisan key:generate
+   ```
+   
+   ```sh
+   php artisan migrate
+   ```
+   
+11. Ijinkan sorate untuk rewrite dengan perintah
+
+   ```sh
+   chmod -R 777 storage
+   ```
+   
+12. Deploy juga VM `prod` sesuai langkah pada `dev` langkah 7 - 11.
+
+13. Buat repository baru di github.com `devops-cicd`
 
