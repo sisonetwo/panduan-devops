@@ -55,7 +55,7 @@ resource "aws_security_group_rule" "incoming" {
 resource "aws_instance" "ec2" {
   count = 2
   ami           = "ami-0beb6fc68811e5682" # ubuntu 20.04 region singapura
-  instance_type = "t2.small"
+  instance_type = "t3.small"
   key_name = "${aws_key_pair.keypair_demo.key_name}"
   vpc_security_group_ids = ["${aws_security_group.allow_all.id}"]
 
