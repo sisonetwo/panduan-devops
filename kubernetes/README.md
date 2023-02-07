@@ -156,7 +156,7 @@
         name: finance
       ```
       
-     Jalankan dengan ketik
+     Jalankan dengan perintah
      
       ```sh
       kubectl create -f namafile.yaml
@@ -173,4 +173,100 @@
       ```sh
       kubectl delete namepsace namafile.yaml
       ```
+      
+## Replica Set (menjaga jumlah replca Pod dan me-reschedule ulang pod yang mati)
+
+          ```sh
+          apiVersion: apps/v1
+          kind: ReplicaSet
+          metadata:
+            name: nginx
+          spec:
+            replicas: 3
+            selector:
+              matchLabels:
+                app: nginx
+            template:
+              metadata:
+                name: nginx
+                labels:
+                  app: nginx
+              spec:
+                containers:
+                - name: nginx
+                  image: nginx
+                  ports:
+                  - containerPort: 80
+            ```
+   1. Jalankan dengan perintah
+      
+      ```sh
+      kubectl create -f namafile.yaml
+      ```
+      
+   2. Melihat replica set
+      
+      ```sh
+      kubectl get rs
+      ```
+      
+   3. Menghapus pod
     
+      ```sh
+      kubectl delete pod namapod
+      ```
+
+## Label Selector
+
+  1. buat file dengan nama nginx-rs-match-expression.yaml
+  
+    ```sh
+    apiVersion: apps/v1
+    kind: ReplicaSet
+    metadata:
+      name: nginx
+    spec:
+      replicas: 3
+      selector:
+        matchExpressions:
+          - key: app
+            operator: In
+            values:
+              - nginx
+          - key: env
+            operator: In
+            values:
+              - prod
+              - qa
+              -dev
+      template:
+        metadata:
+          name: nginx
+          labels:
+            app: nginx
+            env: prod
+        spec:
+          containers:
+          - name: nginx
+            image: nginx
+            ports:
+            - containerPort: 80
+    ```
+    
+  2. Jalankan dengan perintah
+      
+      ```sh
+      kubectl create -f nnginx-rs-match-expression.yaml
+      ```
+      
+   3. Melihat Label MatchExpression
+      
+      ```sh
+      kubectl get pod
+      ```
+      
+   4. Menghapus pod
+    
+      ```sh
+      kubectl delete pod namapod
+      ``` 
