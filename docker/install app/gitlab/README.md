@@ -12,6 +12,12 @@ For convenience, we will also set an environment variable that will contain the 
 export GITLAB_HOME=$(pwd)/gitlab
 ```
 
+Perform System update
+sudo apt-get update
+
+Install Docker-Compose
+sudo apt-get install docker-compose -y
+
 In the next step, we create the docker-compose.yml file 
 
 Containers are started using the command:
