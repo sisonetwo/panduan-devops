@@ -13,10 +13,14 @@ export GITLAB_HOME=$(pwd)/gitlab
 ```
 
 Perform System update
+```sh
 sudo apt-get update
+```
 
 Install Docker-Compose
+```sh
 sudo apt-get install docker-compose -y
+```
 
 In the next step, we create the docker-compose.yml file 
 
