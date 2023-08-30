@@ -1,0 +1,7 @@
+# Jetbraint editor
+.idea/
+*.iml
+*.ipl
+
+# MacOS temp
+.DS_Store

@@ -1,0 +1,11 @@
+## Jetbraint
+.idea/
+*.iml
+*.iwl
+*.ipl
+
+## Macos
+.DS_Store
+
+## Docker
+Dockerfile
